@@ -3,11 +3,8 @@ vim.g.maplocalleader = "\\"
 
 -- format based on lsp
 vim.keymap.set('n', '<leader>F', vim.lsp.buf.format)
--- -- Copy from visual mode. 
+-- -- Copy from visual mode to clipboard
 vim.keymap.set('v', '<leader>y', '"+y')
-
--- system clipboard
-vim.api.nvim_set_option("clipboard", "unnamedplus")
 
 
 -- options

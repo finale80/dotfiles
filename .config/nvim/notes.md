@@ -60,3 +60,9 @@ https://github.com/windwp/nvim-autopairs
 
 ## indentation
 https://github.com/lukas-reineke/indent-blankline.nvim
+
+## sticky class names
+https://github.com/nvim-treesitter/nvim-treesitter-context
+
+## scrollbar
+https://github.com/petertriho/nvim-scrollbar
