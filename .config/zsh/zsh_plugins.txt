@@ -1,0 +1,5 @@
+# see instruction at https://antidote.sh/usage
+
+# generic zsh plugins
+zsh-users/zsh-autosuggestions
+zdharma-continuum/fast-syntax-highlighting kind:defer
