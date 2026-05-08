@@ -25,6 +25,7 @@ vim.pack.add({
   'https://github.com/nvim-mini/mini.nvim',
   'https://github.com/romgrk/barbar.nvim',
   'https://github.com/lewis6991/gitsigns.nvim',
+  'https://github.com/nvim-treesitter/nvim-treesitter-textobjects',
 })
 
 -- ad-hoc configs
@@ -41,6 +42,7 @@ require('plugins.setup.barbar')
 require('nvim_comment').setup()
 require('fzf-lua').setup()
 require('mason').setup()
+require('nvim-treesitter-textobjects').setup()
 
 -- blink.cmp (invoke before lsp config
 require('plugins.setup.blink-cmp')
@@ -52,3 +54,7 @@ require('lsp.config')
 -- mini
 require('mini.bracketed').setup()
 require('mini.map').setup()
+require('mini.ai').setup()
+
+
+

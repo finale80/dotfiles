@@ -71,7 +71,9 @@ vim.api.nvim_create_autocmd('BufEnter', {
     pattern = '*',
     group = minimap_options,
     callback = function(data)
-        if data.file ~= "" then
+        -- only open if the buffer has a filename 
+        -- and it's not markdonw
+        if data.file ~= "" and vim.bo.filetype ~= 'markdown' then
             minimap.open()
         end
     end
