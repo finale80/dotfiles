@@ -26,6 +26,10 @@ vim.pack.add({
   'https://github.com/romgrk/barbar.nvim',
   'https://github.com/lewis6991/gitsigns.nvim',
   'https://github.com/nvim-treesitter/nvim-treesitter-textobjects',
+  'https://github.com/rachartier/tiny-inline-diagnostic.nvim',
+  'https://github.com/stevearc/oil.nvim',
+  'https://github.com/windwp/nvim-autopairs',
+  'https://github.com/liuchengxu/vista.vim',
 })
 
 -- ad-hoc configs
@@ -36,13 +40,15 @@ require('plugins.setup.nvim-treesitter')
 require('plugins.setup.toggleterm')
 require('plugins.setup.repl')
 require('plugins.setup.barbar')
--- require('barbar').setup()
+require('plugins.setup.oil')
 
 -- defaults
 require('nvim_comment').setup()
 require('fzf-lua').setup()
 require('mason').setup()
 require('nvim-treesitter-textobjects').setup()
+require("tiny-inline-diagnostic").setup()
+require('nvim-autopairs').setup()
 
 -- blink.cmp (invoke before lsp config
 require('plugins.setup.blink-cmp')
@@ -56,5 +62,7 @@ require('mini.bracketed').setup()
 require('mini.map').setup()
 require('mini.ai').setup()
 
-
+-- experimental
+require('plugins.setup.gitsigns')
+require('mini.diff').setup()
 

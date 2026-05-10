@@ -13,6 +13,7 @@
 * tree-sitter cli: https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md + `sudo -E apt-get install libclang-dev`
 * pyenv: manage python system installation https://github.com/pyenv/pyenv#linuxunix
 * nvm: manage node system installation https://github.com/nvm-sh/nvm
+* universal-ctags: required for tagbar and vista `sudo -E apt-get install universal-ctags`
 
 # Issues
 
@@ -34,6 +35,10 @@ https://vonheikemen.github.io/devlog/tools/using-netrw-vim-builtin-file-explorer
 https://github.com/nvim-tree/nvim-tree.lua
 Provides awesome file navigation. The default configuration recommend
 to disable netrw, but I leave it enabled for now.
+
+## oil
+https://github.com/stevearc/oil.nvim
+Edit files and folders from a buffer
 
 ## catppuccin
 https://github.com/catppuccin/nvim
@@ -84,9 +89,36 @@ https://github.com/xzbdmw/colorful-menu.nvim
 
 ## terminal 
 https://github.com/akinsho/toggleterm.nvim
+intergrate a shell terminal in a separate window
 
 ## ipython repl
 https://github.com/pappasam/nvim-repl
+integrate an ipython REPL in a separate window
 
 ## tab line
 https://github.com/romgrk/barbar.nvim
+show buffer as tabs
+
+## mini
+https://nvim-mini.org/mini.nvim/
+It's a large collection of modules, so I'm still experimenting with them. So far the one enabled are
+* mini.bracketed: jump to specific targets (e.g., comments, diagnostic)
+* mini.map: visual buffer map
+* mini.ai: extended text-objects
+* mini.diff: visualize git changes
+
+## gitsigns
+https://github.com/lewis6991/gitsigns.nvim
+visualize files changes
+
+## tiny-inline-diagnostic
+https://github.com/rachartier/tiny-inline-diagnostic.nvim
+inline diagnostic
+
+## nvim-autopairs
+https://github.com/windwp/nvim-autopairs
+automatically pair special chars (imo it's better than mini.pairs)
+
+## vista
+https://github.com/liuchengxu/vista.vim
+alternative to tagbar

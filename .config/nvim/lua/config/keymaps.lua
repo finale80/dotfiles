@@ -1,4 +1,7 @@
 -- <leader>T        misc: open nvim-tree
+-- <leader>O        misc: open oil
+-- <leader>C        misc: open vista
+--
 -- <leader>/        misc: toggle comment
 -- <leader>bn       misc: next buffer
 -- <leader>bp       misc: prev buffer
@@ -61,8 +64,8 @@
 -- <ALT>+j          window: move to lower window
 -- <ALT>+k          window: move to upper window
 --
--- <Tab>            buffer: Move to next buffer
--- <S-Tab>          buffer: Move to previous buffer
+-- <Tab>            buffer: Select to next buffer
+-- <S-Tab>          buffer: Select to previous buffer
 -- <A-<>            buffer: Move buffer to left
 -- <A->>            buffer: Move buffer to right
 -- <A-1>            buffer: Goto buffer 1
@@ -82,10 +85,30 @@
 -- <leader>bbd      buffer: Sort buffer by directory
 -- <leader>bbl      buffer: Sort buffer by language
 -- <leader>bbw      buffer: Sort buffer by window number
+--
+-- <leader>hs       Gitsigns: stage hunk
+-- <leader>hr       Gitsigns: reset hunk
+-- <leader>hs       Gitsigns: stage hunk
+-- <leader>hr       Gitsigns: stage reset
+-- <leader>hS       Gitsigns: stage buffer
+-- <leader>hR       Gitsigns: reset buffer
+-- <leader>hp       Gitsigns: preview hunk
+-- <leader>hi       Gitsigns: preview hunk inline
+-- <leader>hb       Gitsigns: blame line
+-- <leader>hd       Gitsigns: diff this
+-- <leader>hD       Gitsigns: ???
+-- <leader>hQ       Gitsigns: ???
+-- <leader>hq       Gitsigns: ???
+-- <leader>tb       Gitsigns: toggle current line blame
+-- <leader>tw       Gitsigns: toggle word diff
+-- ih               Gitsigns: select hunk
 
 
 -- nvim-tree
-vim.keymap.set("n", "<leader>T", ":NvimTreeOpen<CR>")
+vim.keymap.set("n", "<leader>T", ":NvimTreeOpen<CR>", { desc = 'Open nvim-tree' })
+
+-- oil
+vim.keymap.set('n', '<leader>O', ':Oil<CR>', { desc = 'Open oil' })
 
 -- comments
 vim.keymap.set({"n", "v"}, "<leader>/", ":CommentToggle<CR>")
@@ -201,8 +224,8 @@ vim.keymap.set('n', '<leader>rr', ':ReplIpython<CR>:ReplFocus<CR>a', { desc = 'T
 
 -- mini
 
-vim.keymap.set('n', '<Tab>', ':bnext<CR>', { desc = 'Move to next buffer' })
-vim.keymap.set('n', '<S-Tab>', ':bprev<CR>', { desc = 'Move to previous buffer' })
+-- vim.keymap.set('n', '<Tab>', ':bnext<CR>', { desc = 'Move to next buffer' })
+-- vim.keymap.set('n', '<S-Tab>', ':bprev<CR>', { desc = 'Move to previous buffer' })
 vim.keymap.set('n', '<leader>mm', ':lua MiniMap.toggle()<CR>', { desc = 'Toggle minimap' })
 
 
@@ -213,8 +236,8 @@ _barbar_opts  = function(desc)
 end
 
 -- Move to previous/next
--- vim.keymap.set('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
--- vim.keymap.set('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
+vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferPrevious<CR>', _barbar_opts('Select next buffer'))
+vim.keymap.set('n', '<Tab>', '<Cmd>BufferNext<CR>', _barbar_opts('Select previous buffer'))
 
 -- Re-order to previous/next
 vim.keymap.set('n', '<A-<>', '<Cmd>BufferMovePrevious<CR>', _barbar_opts('Move buffer to left'))
@@ -302,3 +325,8 @@ textobject_move(']c', to_move.goto_next_start, "@class.outer", 'Textobject next 
 textobject_move('[c', to_move.goto_previous_start, "@class.outer", 'Textobject previous class start')
 textobject_move(']C', to_move.goto_next_end, '@class.outer', 'Textobject next class end')
 textobject_move('[C', to_move.goto_previous_end, '@class.outer', 'Textobject previous class end')
+
+-- vista (ctag viewer)
+vim.keymap.set('n', '<leader>C', ':Vista!!<CR>', { desc = 'Toggle vista' })
+
+vim.g.vista_stay_on_open = 0

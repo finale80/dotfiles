@@ -64,17 +64,17 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
--- minimap
-local minimap = require('mini.map')
-local minimap_options = vim.api.nvim_create_augroup("MinimapOptions", {})
-vim.api.nvim_create_autocmd('BufEnter', {
-    pattern = '*',
-    group = minimap_options,
-    callback = function(data)
-        -- only open if the buffer has a filename 
-        -- and it's not markdonw
-        if data.file ~= "" and vim.bo.filetype ~= 'markdown' then
-            minimap.open()
-        end
-    end
-})
+-- -- minimap
+-- local minimap = require('mini.map')
+-- local minimap_options = vim.api.nvim_create_augroup("MinimapOptions", {})
+-- vim.api.nvim_create_autocmd('BufEnter', {
+--     pattern = '*',
+--     group = minimap_options,
+--     callback = function(data)
+--         -- only open if the buffer has a filename 
+--         -- and it's not markdonw
+--         if data.file ~= "" and vim.bo.filetype ~= 'markdown' then
+--             minimap.open()
+--         end
+--     end
+-- })
