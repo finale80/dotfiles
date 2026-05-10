@@ -25,6 +25,10 @@ As last resort, if nothing work, grab a compiled binary from tree-sitter github 
 ## cannot install nvm/node on WSL1
 On WSL1 npm was issuing errors like `/home/finamore/.nvm/versions/node/v24.0.0/bin/node: 2: Syntax error: word unexpected (expecting ")")` and this was resolved based on a stackoverflow answer which requires creating a wrapper script for node/npm/npx (which apparently is adding extra libraries when invoking the commands) https://stackoverflow.com/questions/75767564/usr-bin-node-1-syntax-error-unexpected
 
+## [vista.vim] ctags: Unknown option: --extras
+possibly related to this issue https://github.com/microsoft/vscode-python/issues/3517
+Resolved by compiling ctags as suggested by the README of the vista repo https://github.com/liuchengxu/vista.vim#other-tips
+
 # Packages
 
 ## netrw
