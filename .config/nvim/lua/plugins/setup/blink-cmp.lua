@@ -13,7 +13,8 @@ require('blink.cmp').setup({
     completion = {
         menu = {
             -- disable autoshow (open via keymap to show)
-            auto_show = false,
+            -- auto_show = false,
+            auto_show_delay_ms = 500,
             draw = {
               -- enable menu colors based on treesitter
               -- treesitter = { 'lsp' } 

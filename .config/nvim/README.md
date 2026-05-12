@@ -123,6 +123,13 @@ inline diagnostic
 https://github.com/windwp/nvim-autopairs
 automatically pair special chars (imo it's better than mini.pairs)
 
+## tagbar
+https://github.com/preservim/tagbar
+show ctags
+
+
+# Experimental
+
 ## vista
 https://github.com/liuchengxu/vista.vim
-alternative to tagbar
+alternative to tagbar (but seems to have issues with barbar and unclear if it can folds)

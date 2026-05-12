@@ -327,6 +327,9 @@ textobject_move(']C', to_move.goto_next_end, '@class.outer', 'Textobject next cl
 textobject_move('[C', to_move.goto_previous_end, '@class.outer', 'Textobject previous class end')
 
 -- vista (ctag viewer)
-vim.keymap.set('n', '<leader>C', ':Vista!!<CR>', { desc = 'Toggle vista' })
+-- vim.keymap.set('n', '<leader>C', ':Vista!!<CR>', { desc = 'Toggle vista' })
+-- vim.g.vista_stay_on_open = 0
+--
+-- tagbar (ctag viewer)
+vim.keymap.set('n', '<leader>C', ':TagbarToggle<CR>', { desc = 'Toggle tagbar' })
 
-vim.g.vista_stay_on_open = 0

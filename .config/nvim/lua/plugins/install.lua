@@ -29,7 +29,8 @@ vim.pack.add({
   'https://github.com/rachartier/tiny-inline-diagnostic.nvim',
   'https://github.com/stevearc/oil.nvim',
   'https://github.com/windwp/nvim-autopairs',
-  'https://github.com/liuchengxu/vista.vim',
+  -- 'https://github.com/liuchengxu/vista.vim',
+  'https://github.com/preservim/tagbar',
 })
 
 -- ad-hoc configs
