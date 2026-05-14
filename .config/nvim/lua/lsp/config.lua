@@ -14,7 +14,8 @@ vim.lsp.config('clangd', {})
 
 vim.lsp.enable({
     'lua_ls',
-    'ty',
+    --'ty',
+    'pyright',
     'bashls',
     'ts_ls',
     'clangd',

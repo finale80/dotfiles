@@ -333,3 +333,5 @@ textobject_move('[C', to_move.goto_previous_end, '@class.outer', 'Textobject pre
 -- tagbar (ctag viewer)
 vim.keymap.set('n', '<leader>C', ':TagbarToggle<CR>', { desc = 'Toggle tagbar' })
 
+
+-- vim.keymap.set('n', '<leader>K', vim.lsp.buf.hover, { desc = 'Show Documentation' })

@@ -13,6 +13,7 @@ vim.pack.add({
   'https://github.com/neovim/nvim-lspconfig',
   'https://github.com/mason-org/mason.nvim',
   'https://github.com/mattn/efm-langserver',
+  'https://github.com/nvimdev/lspsaga.nvim',
   {
     src = 'https://github.com/saghen/blink.cmp',
     branch = 'v1',
@@ -50,6 +51,7 @@ require('mason').setup()
 require('nvim-treesitter-textobjects').setup()
 require("tiny-inline-diagnostic").setup()
 require('nvim-autopairs').setup()
+require('lspsaga').setup()
 
 -- blink.cmp (invoke before lsp config
 require('plugins.setup.blink-cmp')
