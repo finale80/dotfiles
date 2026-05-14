@@ -33,6 +33,10 @@
       "rev": "dd3f588bacbeb041be6facf1742e42097f62165d",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
+    "indent-blankline.nvim": {
+      "rev": "d28a3f70721c79e3c5f6693057ae929f3d9c0a03",
+      "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
+    },
     "lspsaga.nvim": {
       "rev": "3e33a6a6c5d379f3d4fae77fae6b53b762a0a30f",
       "src": "https://github.com/nvimdev/lspsaga.nvim"
@@ -61,6 +65,10 @@
       "rev": "e9ac16ab056695cad6461173693069ec070d2b23",
       "src": "https://github.com/terrortylor/nvim-comment"
     },
+    "nvim-hlslens": {
+      "rev": "be2d7b2be01860b5445a007ff2bc72b29896db6b",
+      "src": "https://github.com/kevinhwang91/nvim-hlslens"
+    },
     "nvim-lspconfig": {
       "rev": "31026a13eefb20681124706a79fc1df6bf11ab27",
       "src": "https://github.com/neovim/nvim-lspconfig"
@@ -68,6 +76,10 @@
     "nvim-repl": {
       "rev": "b2dc92607fd6d1833b9c2bd916eeedcb04cad7de",
       "src": "https://github.com/pappasam/nvim-repl"
+    },
+    "nvim-scrollbar": {
+      "rev": "f8e87b96cd6362ef8579be456afee3b38fd7e2a8",
+      "src": "https://github.com/petertriho/nvim-scrollbar"
     },
     "nvim-tree.lua": {
       "rev": "f9bfc0059eca24546b69a7006110463da4808f8f",
@@ -81,6 +93,10 @@
       "rev": "851e865342e5a4cb1ae23d31caf6e991e1c99f1e",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
     },
+    "nvim-ufo": {
+      "rev": "ab3eb124062422d276fae49e0dd63b3ad1062cfc",
+      "src": "https://github.com/kevinhwang91/nvim-ufo"
+    },
     "nvim-web-devicons": {
       "rev": "4fc505ac7bd7692824a142e96e5f529c133862f8",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
@@ -88,6 +104,10 @@
     "oil.nvim": {
       "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
       "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "promise-async": {
+      "rev": "119e8961014c9bfaf1487bf3c2a393d254f337e2",
+      "src": "https://github.com/kevinhwang91/promise-async"
     },
     "tagbar": {
       "rev": "7bfffca1f121afb7a9e38747500bf5270e006bb1",

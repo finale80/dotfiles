@@ -32,6 +32,9 @@ vim.pack.add({
   'https://github.com/windwp/nvim-autopairs',
   -- 'https://github.com/liuchengxu/vista.vim',
   'https://github.com/preservim/tagbar',
+  'https://github.com/lukas-reineke/indent-blankline.nvim',
+  'https://github.com/kevinhwang91/nvim-hlslens',
+  'https://github.com/petertriho/nvim-scrollbar',
 })
 
 -- ad-hoc configs
@@ -43,6 +46,7 @@ require('plugins.setup.toggleterm')
 require('plugins.setup.repl')
 require('plugins.setup.barbar')
 require('plugins.setup.oil')
+require('plugins.setup.ibl')
 
 -- defaults
 require('nvim_comment').setup()
@@ -52,6 +56,9 @@ require('nvim-treesitter-textobjects').setup()
 require("tiny-inline-diagnostic").setup()
 require('nvim-autopairs').setup()
 require('lspsaga').setup()
+require('hlslens').setup()
+require("scrollbar").setup()
+
 
 -- blink.cmp (invoke before lsp config
 require('plugins.setup.blink-cmp')
@@ -68,4 +75,3 @@ require('mini.ai').setup()
 -- experimental
 require('plugins.setup.gitsigns')
 require('mini.diff').setup()
-

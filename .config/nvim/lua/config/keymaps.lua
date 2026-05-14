@@ -1,8 +1,9 @@
 -- <leader>T        misc: open nvim-tree
 -- <leader>O        misc: open oil
 -- <leader>C        misc: open vista
---
+-- <leader>I        misc: toggle IBL
 -- <leader>/        misc: toggle comment
+--
 -- <leader>bn       misc: next buffer
 -- <leader>bp       misc: prev buffer
 -- <leader>vs       misc: split vertically
@@ -335,3 +336,6 @@ vim.keymap.set('n', '<leader>C', ':TagbarToggle<CR>', { desc = 'Toggle tagbar' }
 
 
 -- vim.keymap.set('n', '<leader>K', vim.lsp.buf.hover, { desc = 'Show Documentation' })
+
+-- indent black line
+vim.keymap.set('n', "<leader>I", ':IBLToggle<CR>', { desc = 'Toggle IBL'})

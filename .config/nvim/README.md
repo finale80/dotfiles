@@ -127,9 +127,24 @@ automatically pair special chars (imo it's better than mini.pairs)
 https://github.com/preservim/tagbar
 show ctags
 
+## indent blank line
+https://github.com/lukas-reineke/indent-blankline.nvim
+show vertical bars to guide indentation
+
+## hlslens
+https://github.com/kevinhwang91/nvim-hlslens
+show counter for search and ease leap between search results
+
+## scrollbar
+https://github.com/petertriho/nvim-scrollbar
+compact visual diagnostics
+
+
 
 # Experimental
 
 ## vista
 https://github.com/liuchengxu/vista.vim
 alternative to tagbar (but seems to have issues with barbar and unclear if it can folds)
+
+
