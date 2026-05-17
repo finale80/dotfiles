@@ -71,7 +71,11 @@ require('lsp.config')
 require('mini.bracketed').setup()
 require('mini.map').setup()
 require('mini.ai').setup()
+require('mini.indentscope').setup({
+    options = { border = 'top' },
+})
 
 -- experimental
 require('plugins.setup.gitsigns')
 require('mini.diff').setup()
+
